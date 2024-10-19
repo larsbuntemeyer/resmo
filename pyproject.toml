@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resmo"
+version = "0.1.0"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["resmo"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
